@@ -1,25 +1,33 @@
-Digi Life Lesson Server
+# Digi Life Lesson Server
 
 Backend server for the Digi Life Lesson application.
 
-This project provides the API and server-side functionality required for managing users, lessons, favorites, authentication, and other application features.
+This project contains the server-side code and APIs required for the application.
 
-Features
-User management
-Admin user management
-User update and delete functionality
-Favorite lesson API
-Database connection
-API endpoints for application data
-Basic API documentation and comments
-Vercel deployment support
-Technologies Used
-Node.js
-Express.js
-MongoDB
-JavaScript
-Vercel
-Project Structure
+## Features
+
+* User management
+* Admin user management
+* User update and delete
+* Favorite management
+* Database connection
+* Data retrieval
+* Data update
+* Data deletion
+* API comments and documentation
+* Vercel deployment support
+
+## Technologies Used
+
+* Node.js
+* Express.js
+* MongoDB
+* JavaScript
+* Vercel
+
+## Project Structure
+
+```text
 Digi-Life-Lesson-Server/
 │
 ├── index.js
@@ -29,60 +37,64 @@ Digi-Life-Lesson-Server/
 ├── vercel.json
 ├── .gitignore
 └── .vscode/
-Installation
+```
 
-Clone the repository:
+## Installation
 
-git clone https://github.com/akkas07/Digi-Life-Lesson-Server.git
+Install the project dependencies:
 
-Go to the project directory:
-
-cd Digi-Life-Lesson-Server
-
-Install the required packages:
-
+```bash
 npm install
-Run the Project
+```
 
-Start the server with:
+## Run the Project
 
+Start the server:
+
+```bash
 npm start
+```
 
-For development, you can also use:
+You can also run the server directly with:
 
+```bash
 node index.js
-Environment Variables
+```
 
-Create a .env file in the project root and add the required environment variables.
+## Environment Variables
+
+Create a `.env` file in the project directory and add the required environment variables.
 
 Example:
 
+```env
 PORT=5000
 MONGODB_URI=your_mongodb_connection_string
+```
 
-Do not upload your .env file or expose database credentials and other private keys in the repository.
+Keep your database credentials and other private information inside the `.env` file.
 
-API
+## API
 
-The server contains APIs for different application features, including:
+The project includes APIs for:
 
-User management
-Admin operations
-Favorite management
-Data retrieval
-Data update
-Data deletion
+* User management
+* Admin operations
+* Favorite management
+* Data retrieval
+* Data update
+* Data deletion
 
-API routes are available in index.js.
+Most of the API routes are handled in `index.js`.
 
-Deployment
+## Deployment
 
-The project can be deployed using Vercel.
+The project is configured for deployment using Vercel.
 
-The vercel.json file is included for deployment configuration.
+The `vercel.json` file contains the deployment configuration.
 
-Author
+## Author
 
 Akkas Islam
 
-GitHub: https://github.com/akkas07
+Digi Life Lesson Server
